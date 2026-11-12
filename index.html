@@ -96,30 +96,30 @@
             </svg>
             View Projects
           </a>
-          <!-- Contact Me button with mail icon -->
-          <a href="contact.html" class="btn btn-outline">
+          <!-- About Me button with user profile icon -->
+          <a href="#about" class="btn btn-outline">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
                  stroke-linejoin="round" width="16" height="16" aria-hidden="true">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
             </svg>
-            Contact Me
+            About Me
           </a>
         </div>
       </div>
 
-      <!-- Right: profile photo -->
-      <!-- Topic 5: Images & Multimedia - round framed profile picture -->
-      <!-- Topic 13: CSS Animations - floating + spinning ring + glow -->
-      <div class="hero-photo" id="hero-photo-wrap" aria-label="Profile photo">
-        <div class="profile-ring">
+      <!-- Right: professional studio portrait (40-45% width, no circular frame, natural blend) -->
+      <!-- Topic 5: Images & Multimedia -->
+      <div class="hero-photo" id="hero-photo-wrap" aria-label="Profile portrait">
+        <div class="portrait-frame">
           <img
             src="images/profile.jpg"
-            alt="Lakshmi Narayana Kumar - profile photo"
-            class="profile-img"
-            width="288"
-            height="288"
+            alt="Lakshmi Narayana Kumar - portrait"
+            class="portrait-img"
+            id="hero-portrait"
+            width="830"
+            height="1024"
           />
         </div>
       </div>
@@ -135,6 +135,84 @@
       </div>
 
     </section><!-- end .hero -->
+
+    <!-- ============================================================
+         About Me - Storytelling Section (Revealed on Scroll)
+         Verified Education, Details & Milestones
+         ============================================================ -->
+    <section class="section reveal" id="about" aria-labelledby="about-heading">
+      <div class="section-title">
+        <span class="eyebrow-tag">Background &amp; Story</span>
+        <h2 id="about-heading">About Me</h2>
+        <span class="title-bar"></span>
+        <p>Engineering mindset, hands-on development, and continuous learning.</p>
+      </div>
+
+      <div class="about-story-grid">
+        <div class="about-story-card">
+          <h3>Engineering Education &amp; Focus</h3>
+          <p>
+            I am a <strong>3rd-year Computer Science and Engineering student</strong>
+            at <em>SRM Institute of Science and Technology (SRMIST), Kattankulathur</em>.
+            Currently maintaining a <strong>7.5 / 10 CGPA</strong> with expected graduation in <strong>2028</strong>.
+          </p>
+          <p>
+            My passion is building robust, user-centric software. I focus on modern full-stack development
+            (React.js, Node.js, Express.js, Spring Boot) along with strong computer science fundamentals
+            in Java, Data Structures, Algorithms, and Database Management.
+          </p>
+          <div class="edu-pills">
+            <div class="edu-pill">
+              <strong>Degree</strong>
+              B.Tech CSE (3rd Year)
+            </div>
+            <div class="edu-pill">
+              <strong>CGPA</strong>
+              7.5 / 10
+            </div>
+            <div class="edu-pill">
+              <strong>Expected Grad</strong>
+              2028
+            </div>
+            <div class="edu-pill">
+              <strong>Institution</strong>
+              SRMIST, Kattankulathur
+            </div>
+          </div>
+        </div>
+
+        <div class="about-timeline-card">
+          <h3>Journey Milestones</h3>
+          <div class="mini-timeline">
+            <div class="mini-tl-item">
+              <span class="mini-tl-year">School</span>
+              <strong>Foundation Years</strong>
+              <p>Strong foundation in mathematics and logical problem-solving.</p>
+            </div>
+            <div class="mini-tl-item">
+              <span class="mini-tl-year">2022</span>
+              <strong>Joined SRMIST &mdash; B.Tech CSE</strong>
+              <p>Began core computer science studies and programming fundamentals.</p>
+            </div>
+            <div class="mini-tl-item">
+              <span class="mini-tl-year">2023</span>
+              <strong>Full-Stack &amp; Certifications</strong>
+              <p>Earned NPTEL Java &amp; OOP certifications, and Cisco Networking Basics.</p>
+            </div>
+            <div class="mini-tl-item">
+              <span class="mini-tl-year">2024</span>
+              <strong>Projects &amp; Leadership</strong>
+              <p>Developed LNK Fashion (MERN e-commerce); Head of Startup Summit, SRMIST.</p>
+            </div>
+            <div class="mini-tl-item">
+              <span class="mini-tl-year">2028</span>
+              <strong>Target Career Roles</strong>
+              <p>Aiming for Full Stack Developer, SDE, and Java Developer roles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ============================================================
          Career Interests - chips row
@@ -267,9 +345,9 @@
         <!-- Topic 7: Box Model - margin, padding, border on card -->
         <article class="project-card" aria-labelledby="fp1-title">
           <!-- Topic 8: Positioning - absolutely positioned badge -->
-          <span class="badge">Web App</span>
-          <!-- Topic 11: Backgrounds - LNK Fashion Logo -->
-          <div class="project-img-wrap bg-lnk" role="img" aria-label="LNK Fashion e-commerce project">
+          <span class="badge">Complete</span>
+          <!-- Topic 11: Backgrounds - LNK Fashion Logo (transparent PNG) -->
+          <div class="project-img-wrap" role="img" aria-label="LNK Fashion e-commerce project">
             <img src="images/projects/lnk-fashion.png" alt="LNK Fashion Logo" class="project-logo-img" />
           </div>
           <div class="project-body">
@@ -283,16 +361,17 @@
               <span class="tag">Node.js</span>
               <span class="tag">MongoDB</span>
             </div>
-            <!-- Topic 4: Links - external link -->
-            <a href="https://github.com/lakshminarayanankumar7-alt"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-outline">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                   width="15" height="15" aria-hidden="true">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              View on GitHub
-            </a>
+            <!-- Topic 4: Links & Actions -->
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-modal-trigger" data-project="lnk-fashion">
+                View Details
+              </button>
+              <a href="https://github.com/lakshminarayanankumar7-alt"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline">
+                GitHub
+              </a>
+            </div>
           </div>
         </article>
 
@@ -303,7 +382,7 @@
             <!-- calendar SVG icon -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                  stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"
-                 stroke-linejoin="round" width="52" height="52" aria-hidden="true">
+                 stroke-linejoin="round" width="48" height="48" aria-hidden="true">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
               <line x1="16" y1="2" x2="16" y2="6"/>
               <line x1="8" y1="2" x2="8" y2="6"/>
@@ -314,38 +393,50 @@
             <h3 id="fp2-title">LEMAN</h3>
             <p>Event Management System &mdash; a platform to plan, organise and
                track events from creation through to completion.</p>
-            <a href="https://github.com/lakshminarayanankumar7-alt"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-outline">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                   width="15" height="15" aria-hidden="true">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              View on GitHub
-            </a>
+            <div class="project-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">Management</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-modal-trigger" data-project="leman">
+                View Details
+              </button>
+              <a href="https://github.com/lakshminarayanankumar7-alt"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline">
+                GitHub
+              </a>
+            </div>
           </div>
         </article>
 
         <!-- Project 3: ScriptArc -->
         <article class="project-card" aria-labelledby="fp3-title">
           <span class="badge badge-progress">In Progress</span>
-          <!-- Topic 11: Backgrounds - ScriptArc Logo -->
-          <div class="project-img-wrap bg-scriptarc" role="img" aria-label="ScriptArc project">
+          <!-- Topic 11: Backgrounds - ScriptArc Logo (transparent PNG) -->
+          <div class="project-img-wrap" role="img" aria-label="ScriptArc project">
             <img src="images/projects/scriptarc.png" alt="ScriptArc Logo" class="project-logo-img" />
           </div>
           <div class="project-body">
             <h3 id="fp3-title">ScriptArc</h3>
             <p>Details are being added &mdash; this project is currently
                under active development.</p>
-            <a href="https://github.com/lakshminarayanankumar7-alt"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-outline">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                   width="15" height="15" aria-hidden="true">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              View on GitHub
-            </a>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Frontend</span>
+              <span class="tag">Architecture</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-modal-trigger" data-project="scriptarc">
+                View Details
+              </button>
+              <a href="https://github.com/lakshminarayanankumar7-alt"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline">
+                GitHub
+              </a>
+            </div>
           </div>
         </article>
 
@@ -439,36 +530,92 @@
     &#8679;
   </a>
 
-  <!-- Cinematic scroll script: scroll progress + hero photo fade + reveal -->
+  <!-- ============================================================
+       Accessible Project Details Modal Dialog
+       ============================================================ -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <div id="modalLogoWrap"></div>
+        <div class="modal-title-group">
+          <h3 id="modalTitle">Project Title</h3>
+          <span id="modalBadge" class="modal-badge badge">Status</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p id="modalDesc"></p>
+        <h4>Key Technical Highlights</h4>
+        <ul id="modalHighlights"></ul>
+        <h4>Technology Stack</h4>
+        <div id="modalTags" class="project-tags"></div>
+      </div>
+      <div class="modal-footer">
+        <a id="modalGithubLink" href="https://github.com/lakshminarayanankumar7-alt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cinematic scroll script & Project Modal Controller -->
   <script>
     (function () {
-      /* Respect prefers-reduced-motion */
       var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       var scrollBar   = document.getElementById('scrollBar');
       var photoWrap   = document.getElementById('hero-photo-wrap');
+      var portrait    = document.getElementById('hero-portrait');
+      var heroText    = document.querySelector('.hero-text');
       var hero        = document.querySelector('.hero');
 
       /* ---- Scroll Progress Bar ---- */
       function updateProgress() {
-        var scrollTop  = window.scrollY || document.documentElement.scrollTop;
-        var docHeight  = document.documentElement.scrollHeight - window.innerHeight;
-        var pct        = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct       = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
         if (scrollBar) scrollBar.style.width = pct + '%';
       }
 
-      /* ---- Hero photo cinematic fade on scroll ---- */
-      function updateHeroPhoto() {
-        if (!hero || !photoWrap || reducedMotion) return;
-        var heroBottom = hero.getBoundingClientRect().bottom;
-        var heroH      = hero.offsetHeight;
-        /* Start fading once bottom of hero is 80% from top of viewport */
-        var ratio = 1 - Math.max(0, Math.min(1, heroBottom / (heroH * 0.8)));
-        var opacity   = 1 - ratio * 0.85;
-        var scale     = 1 - ratio * 0.12;
-        photoWrap.style.opacity   = opacity;
-        photoWrap.style.transform = 'scale(' + scale + ')';
+      /* ---- Cinematic Hero Scroll Animation with requestAnimationFrame ---- */
+      var isTicking = false;
+      function onScroll() {
+        if (!isTicking) {
+          window.requestAnimationFrame(function () {
+            updateProgress();
+
+            if (!reducedMotion && hero && photoWrap) {
+              var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+              var heroH   = hero.offsetHeight;
+              var progress = Math.min(1, Math.max(0, scrollY / (heroH * 0.72)));
+
+              /* 1. Portrait moves downward slightly */
+              /* 2. Portrait opacity smoothly decreases */
+              var photoOpacity = Math.max(0, 1 - progress * 1.15);
+              var photoY       = progress * 45;
+              photoWrap.style.opacity   = photoOpacity;
+              photoWrap.style.transform = 'translateY(' + photoY + 'px)';
+
+              /* 3. Hero intro text fades away gently */
+              if (heroText) {
+                var textOpacity = Math.max(0, 1 - progress * 1.1);
+                var textY       = -progress * 22;
+                heroText.style.opacity   = textOpacity;
+                heroText.style.transform = 'translateY(' + textY + 'px)';
+              }
+            }
+
+            isTicking = false;
+          });
+          isTicking = true;
+        }
       }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      updateProgress();
 
       /* ---- Reveal on scroll (IntersectionObserver) ---- */
       if ('IntersectionObserver' in window) {
@@ -480,19 +627,137 @@
               revealObs.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.12 });
         revealEls.forEach(function (el) { revealObs.observe(el); });
       }
 
-      /* ---- Bind scroll ---- */
-      window.addEventListener('scroll', function () {
-        updateProgress();
-        updateHeroPhoto();
-      }, { passive: true });
+      /* ---- Interactive Project Modal Dialog ---- */
+      var projectData = {
+        'lnk-fashion': {
+          title: 'LNK Fashion',
+          badge: 'Complete',
+          badgeClass: 'badge',
+          logoHtml: '<img src="images/projects/lnk-fashion.png" alt="LNK Fashion Logo" class="modal-logo" />',
+          desc: 'A full-featured full-stack e-commerce application developed as a complete MERN stack platform. Enables comprehensive online clothing retail with dynamic catalogue discovery, interactive shopping bag, user authentication, and order workflows.',
+          highlights: [
+            'End-to-end MERN architecture (React.js, Node.js, Express.js, MongoDB)',
+            'Modular RESTful API design with structured data validation',
+            'Full client-side state handling for shopping cart and user sessions',
+            'Responsive product gallery with responsive layout for mobile and desktop'
+          ],
+          tags: ['React.js', 'Vite', 'Node.js', 'Express.js', 'MongoDB', 'REST API']
+        },
+        'leman': {
+          title: 'LEMAN',
+          badge: 'In Progress',
+          badgeClass: 'badge badge-progress',
+          logoHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+          desc: 'An Event Management System engineered to organize, track, and manage events from inception to closure. Focused on college initiatives, campus festivals, and startup showcases.',
+          highlights: [
+            'Event scheduling, track assignment, and agenda monitoring',
+            'Centralized participant registration and role-based access management',
+            'Real-time status tracking for venues, coordinators, and schedules'
+          ],
+          tags: ['Web Application', 'Event Management', 'Full Stack', 'Database Design']
+        },
+        'scriptarc': {
+          title: 'ScriptArc',
+          badge: 'In Progress',
+          badgeClass: 'badge badge-progress',
+          logoHtml: '<img src="images/projects/scriptarc.png" alt="ScriptArc Logo" class="modal-logo" />',
+          desc: 'An interactive developer utility and web application under active design and development. Explores modern frontend architecture, developer ergonomics, and reactive UI patterns.',
+          highlights: [
+            'Under active implementation with modern component-driven engineering',
+            'Clean architectural separation between state and rendering layers',
+            'Responsive interface design tailored for developers'
+          ],
+          tags: ['JavaScript', 'Frontend Architecture', 'UI/UX Design', 'Modern Web']
+        },
+        'finsmart': {
+          title: 'FINSMART',
+          badge: 'In Progress',
+          badgeClass: 'badge badge-progress',
+          logoHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+          desc: 'A smart financial management and budgeting platform designed for tracking expenditure, analyzing financial trends, and delivering actionable analytics.',
+          highlights: [
+            'Intelligent expense tracking and category classification',
+            'Visual summary reports and progress tracking',
+            'Data-first architecture prioritizing privacy and local efficiency'
+          ],
+          tags: ['FinTech', 'Data Analytics', 'Full Stack', 'Web Application']
+        }
+      };
 
-      /* Initial call */
-      updateProgress();
-      updateHeroPhoto();
+      var modal       = document.getElementById('projectModal');
+      var closeBtn    = document.getElementById('modalCloseBtn');
+      var modalTitle  = document.getElementById('modalTitle');
+      var modalBadge  = document.getElementById('modalBadge');
+      var modalLogo   = document.getElementById('modalLogoWrap');
+      var modalDesc   = document.getElementById('modalDesc');
+      var modalHl     = document.getElementById('modalHighlights');
+      var modalTags   = document.getElementById('modalTags');
+      var lastFocused = null;
+
+      function openModal(projKey, triggerEl) {
+        var data = projectData[projKey];
+        if (!data || !modal) return;
+        lastFocused = triggerEl;
+
+        modalTitle.textContent = data.title;
+        modalBadge.textContent = data.badge;
+        modalBadge.className   = data.badgeClass;
+        modalLogo.innerHTML    = data.logoHtml;
+        modalDesc.textContent  = data.desc;
+
+        modalHl.innerHTML = '';
+        data.highlights.forEach(function (h) {
+          var li = document.createElement('li');
+          li.textContent = h;
+          modalHl.appendChild(li);
+        });
+
+        modalTags.innerHTML = '';
+        data.tags.forEach(function (t) {
+          var span = document.createElement('span');
+          span.className   = 'tag';
+          span.textContent = t;
+          modalTags.appendChild(span);
+        });
+
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        if (lastFocused) lastFocused.focus();
+      }
+
+      document.querySelectorAll('.btn-modal-trigger').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var p = this.getAttribute('data-project');
+          openModal(p, this);
+        });
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) closeModal();
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
     })();
   </script>
 
