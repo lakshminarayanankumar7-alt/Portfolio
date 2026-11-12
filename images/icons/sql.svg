@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <path fill="#2dd4bf" d="M64 12c-29.8 0-54 7.6-54 17v70c0 9.4 24.2 17 54 17s54-7.6 54-17V29c0-9.4-24.2-17-54-17z"/>
+  <path fill="#14b8a6" d="M10 29c0 9.4 24.2 17 54 17s54-7.6 54-17-24.2-17-54-17-54 7.6-54 17z"/>
+  <path fill="#0d9488" d="M10 52c0 9.4 24.2 17 54 17s54-7.6 54-17V40c-11.5 5.7-31.5 9-54 9s-42.5-3.3-54-9v12z"/>
+  <path fill="#0f766e" d="M10 76c0 9.4 24.2 17 54 17s54-7.6 54-17V64c-11.5 5.7-31.5 9-54 9s-42.5-3.3-54-9v12z"/>
+  <text x="64" y="104" font-family="'Poppins', sans-serif" font-weight="800" font-size="28" fill="#ffffff" text-anchor="middle">SQL</text>
+</svg>

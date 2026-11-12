@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!-- Topic 1: HTML Structure &mdash; DOCTYPE, lang attribute -->
+<html lang="en">
+<head>
+  <!-- Topic 1: HTML Structure &mdash; meta charset, viewport, descriptive title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Lakshmi Narayana Kumar &mdash; B.Tech CSE student at SRMIST, aspiring Full Stack Developer." />
+  <title>About | Lakshmi Narayana Kumar</title>
+  <!-- Topic 6: Colors, Fonts &mdash; shared stylesheet with Google Fonts & CSS variables -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top">
+
+  <!-- Scroll progress bar (cinematic upgrade) -->
+  <div class="scroll-progress-bar" id="scrollBar" aria-hidden="true"></div>
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <header> -->
+  <!-- Topic 9: Navigation Bar &mdash; sticky, hover effects, active-page class -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">LNK.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <main> -->
+  <main>
+
+    <!-- Topic 13: CSS Animations &mdash; fade-in page hero banner -->
+    <section class="page-hero" aria-label="Page heading">
+      <!-- Topic 2: Headings &mdash; h1 -->
+      <h1>About <span style="color:var(--accent);">Me</span></h1>
+      <p style="color:var(--text-secondary); max-width:480px; margin:0.5rem auto 0;">
+        A snapshot of who I am, where I study and what drives me forward.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         Topic 8: Alignment & Floating &mdash; image floats beside bio text
+         Topic 5: Images & Multimedia &mdash; profile photo with alt text
+         ============================================================ -->
+    <article class="section float-section" aria-label="Bio section">
+
+      <!-- Topic 8: Float &mdash; image floats left beside text -->
+      <img
+        src="images/profile.jpg"
+        alt="Lakshmi Narayana Kumar &mdash; profile photo"
+        class="float-img"
+        width="220"
+        height="220"
+      />
+
+      <!-- Topic 2: Headings &mdash; h2 -->
+      <h2>Hi, I'm <span style="color:var(--accent);">Lakshmi Narayana Kumar</span></h2>
+
+      <!-- Topic 2: Text Formatting &mdash; <strong>, <em>, <mark> -->
+      <p>
+        I'm a <strong>3rd-year B.Tech Computer Science and Engineering student</strong>
+        at <em>SRM Institute of Science and Technology (SRMIST), Kattankulathur</em>.
+        My current CGPA is <mark>7.5 / 10</mark> and I am on track to graduate in
+        <strong>2028</strong>.
+      </p>
+
+      <p>
+        I enjoy building real-world projects that challenge me to learn new
+        technologies. Right now I am deepening my skills in
+        <strong>full-stack development</strong> &mdash; working with React.js on the
+        frontend, Node.js and Express.js on the backend, and MySQL or MongoDB
+        for data storage.
+      </p>
+
+      <p>
+        My career aim is to join a product-driven team as a
+        <strong>Full Stack Developer, SDE or Java Developer</strong>, where I
+        can contribute meaningfully to engineering challenges and keep growing
+        as a professional.
+      </p>
+
+      <!-- Topic 2: Text Formatting &mdash; blockquote -->
+      <blockquote>
+        "Learning never exhausts the mind; it only ignites it."
+        <footer>&mdash; Personal belief</footer>
+      </blockquote>
+
+    </article>
+
+    <hr class="divider" />
+
+    <!-- ============================================================
+         CINEMATIC UPGRADE: Vertical Timeline (storytelling)
+         ============================================================ -->
+    <section class="section" aria-labelledby="timeline-heading">
+      <div class="section-title">
+        <h2 id="timeline-heading">My Journey</h2>
+        <span class="title-bar"></span>
+        <p>Key milestones that brought me here.</p>
+      </div>
+
+      <div class="timeline" id="timeline">
+
+        <div class="timeline-item">
+          <span class="tl-year">School</span>
+          <div class="tl-title">Foundation Years</div>
+          <p class="tl-body">
+            Completed primary and secondary schooling, developing strong fundamentals in
+            mathematics and logical thinking &mdash; the bedrock of everything that followed.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="tl-year">2022</span>
+          <div class="tl-title">Joined SRMIST &mdash; B.Tech CSE</div>
+          <p class="tl-body">
+            Enrolled in <strong>B.Tech Computer Science and Engineering</strong> at
+            SRM Institute of Science and Technology, Kattankulathur.
+            Began exploring programming, algorithms, and software fundamentals.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="tl-year">2023</span>
+          <div class="tl-title">Discovering Full-Stack Development</div>
+          <p class="tl-body">
+            Started building real web projects using HTML, CSS and JavaScript.
+            Earned NPTEL certifications in <em>Programming in Java</em> and
+            <em>Fundamentals of OOP</em>, and Cisco certifications in Networking Basics.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="tl-year">2024</span>
+          <div class="tl-title">Projects &amp; Leadership</div>
+          <p class="tl-body">
+            Built <strong>LNK Fashion</strong> (full MERN e-commerce), began work on
+            LEMAN and ScriptArc. Took on the role of <em>Head of Startup Summit</em>
+            at SRMIST, leading a student-driven initiative.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="tl-year">Now</span>
+          <div class="tl-title">3rd Year &mdash; Building &amp; Learning</div>
+          <p class="tl-body">
+            Currently in my 3rd year with a CGPA of <strong>7.5 / 10</strong>.
+            Deepening skills in React.js, Spring Boot, Node.js, and exploring
+            system design and data structures for SDE roles.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="tl-year">2028</span>
+          <div class="tl-title">Target: Graduation &amp; Career</div>
+          <p class="tl-body">
+            Expected to graduate in 2028 and join a product-driven team as a
+            <strong>Full Stack Developer, SDE or Java Developer</strong>. The goal is
+            to contribute meaningfully and grow as an engineer.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================================================
+         Topic 5: Images & Multimedia &mdash; HTML5 <video controls> and <audio controls>
+         ============================================================ -->
+    <section class="section" aria-labelledby="media-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="media-heading">Intro Video &amp; Audio</h2>
+        <span class="title-bar"></span>
+        <p>Placeholder media &mdash; replace the files in the <code>media/</code> folder.</p>
+      </div>
+
+      <!-- Topic 5: Images & Multimedia &mdash; <video controls> -->
+      <video
+        controls
+        width="720"
+        aria-label="Intro video"
+        poster="images/profile.jpg"
+        style="border:2px solid var(--border);">
+        <!-- Topic 5: <source> for video -->
+        <source src="media/intro.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+        <a href="media/intro.mp4">Download the video.</a>
+      </video>
+
+      <p class="text-center" style="font-size:0.82rem; color:var(--text-muted); margin-top:0.4rem;">
+        <small>▲ Replace <code>media/intro.mp4</code> with your own video file.</small>
+      </p>
+
+      <!-- Topic 5: Images & Multimedia &mdash; <audio controls> -->
+      <audio controls aria-label="Intro audio"
+             style="margin-top:1.2rem;">
+        <source src="media/intro.mp3" type="audio/mpeg" />
+        Your browser does not support the HTML5 audio element.
+      </audio>
+
+      <p class="text-center" style="font-size:0.82rem; color:var(--text-muted); margin-top:0.4rem;">
+        <small>▲ Replace <code>media/intro.mp3</code> with your own audio file.</small>
+      </p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================================================
+         Topic 3: Lists &mdash; ordered list of education steps
+         ============================================================ -->
+    <section class="section" aria-labelledby="education-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="education-heading">Education</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <!-- Topic 3: Lists &mdash; <ol> ordered list of education -->
+      <ol class="edu-list" aria-label="Education history">
+        <li>
+          <!-- Topic 2: Headings &mdash; h4 inside list item -->
+          <strong>Schooling</strong><br />
+          Completed my primary and secondary schooling (details available on
+          request).
+        </li>
+        <li>
+          <strong>B.Tech, Computer Science and Engineering</strong><br />
+          SRM Institute of Science and Technology (SRMIST), Kattankulathur<br />
+          <!-- Topic 2: Text Formatting &mdash; <small> -->
+          <small>3rd Year · CGPA: 7.5 / 10</small>
+        </li>
+        <li>
+          <strong>Expected Graduation</strong><br />
+          <!-- Topic 2: Text Formatting &mdash; <em> -->
+          <em>2028</em> &mdash; on track with current academic progress.
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============================================================
+         Topic 3: Tables &mdash; Certifications table
+         (thead, tbody, th, td, colspan, rowspan)
+         ============================================================ -->
+    <section class="section" aria-labelledby="certs-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="certs-heading">Certifications</h2>
+        <span class="title-bar"></span>
+        <p>Courses and certifications I have completed.</p>
+      </div>
+
+      <!-- Topic 3: Tables &mdash; full table with thead, tbody, colspan, rowspan -->
+      <div class="table-wrap">
+        <table aria-label="Certifications table">
+          <thead>
+            <tr>
+              <!-- Topic 3: Tables &mdash; colspan merges "Issuer + Certification" header -->
+              <th colspan="2" style="text-align:center;">Certifications Earned</th>
+            </tr>
+            <tr>
+              <th>Issuer</th>
+              <th>Certification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Topic 3: Tables &mdash; rowspan for NPTEL rows -->
+            <tr>
+              <td rowspan="2"><strong>NPTEL</strong></td>
+              <td>Programming in Java</td>
+            </tr>
+            <tr>
+              <td>Fundamentals of Object Oriented Programming</td>
+            </tr>
+            <!-- Topic 3: Tables &mdash; rowspan for Cisco rows -->
+            <tr>
+              <td rowspan="2"><strong>Cisco</strong></td>
+              <td>Networking Basics</td>
+            </tr>
+            <tr>
+              <td>Networking Devices and Basic Configuration</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Leadership section
+         ============================================================ -->
+    <section class="section" aria-labelledby="leadership-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="leadership-heading">Leadership</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <div class="card" style="max-width:640px; margin:0 auto;">
+        <!-- Topic 2: Headings &mdash; h3 -->
+        <h3 style="color:var(--accent);"> Head of Startup Summit, SRMIST</h3>
+        <!-- Topic 2: Text Formatting &mdash; <em> -->
+        <p style="margin-top:0.6rem;">
+          I serve as the <strong>Head of Startup Summit</strong> at SRMIST &mdash;
+          a student-led initiative at the college.
+        </p>
+        <!-- Topic 2: Text Formatting &mdash; <small> -->
+        <small>SRM Institute of Science and Technology, Kattankulathur</small>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Topic 7: Box Model &mdash; Visual explanation card
+         ============================================================ -->
+    <section class="section" aria-labelledby="boxmodel-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="boxmodel-heading">CSS Box Model &mdash; Explained</h2>
+        <span class="title-bar"></span>
+        <p>Every HTML element is a rectangular box made of these four layers.</p>
+      </div>
+
+      <!-- Topic 7: Box Model &mdash; visual card demonstrating margin/padding/border/content -->
+      <div class="boxmodel-card" role="img" aria-label="CSS Box Model diagram"
+           style="max-width:600px; margin:0 auto;">
+        <span class="bm-label">↕ MARGIN (outside the element)</span>
+        <div class="bm-padding">
+          <p style="font-size:0.75rem; color:var(--accent); font-weight:700; margin-bottom:6px;">BORDER</p>
+          <div class="bm-border">
+            <p style="font-size:0.75rem; color:var(--text-secondary); margin-bottom:6px;">PADDING</p>
+            <div class="bm-content">
+              <!-- Topic 2: Headings &mdash; h5 inside diagram -->
+              <h5 style="color:var(--accent-light);">CONTENT</h5>
+              <p style="font-size:0.8rem; margin:4px 0 0; color:var(--text-muted);">
+                Your text, image or other content lives here.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:1rem; font-size:0.88rem; color:var(--text-secondary);">
+          <code>box-sizing: border-box</code> makes the width include
+          padding and border, preventing unexpected overflow.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Topic 2: Text Formatting &mdash; sub, sup, h4&ndash;h6, additional tags demo
+         ============================================================ -->
+    <section class="section" aria-labelledby="formatting-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="formatting-heading">About My Stack</h2>
+        <span class="title-bar"></span>
+      </div>
+
+      <div class="card" style="max-width:720px; margin:0 auto;">
+
+        <!-- Topic 2: Headings &mdash; h4 -->
+        <h4>Technical Background</h4>
+
+        <!-- Topic 2: Headings &mdash; h5 -->
+        <h5 style="color:var(--accent); margin:0.8rem 0 0.4rem;">Core Focus Areas</h5>
+
+        <!-- Topic 3: Lists &mdash; unordered list -->
+        <ul class="skill-list">
+          <li>Full-stack web development with modern JavaScript</li>
+          <li>Java programming (OOP, data structures, algorithms)</li>
+          <li>Database design with MySQL and MongoDB</li>
+        </ul>
+
+        <!-- Topic 2: Headings &mdash; h6 -->
+        <h6 style="margin-top:1.2rem;">Information valid as of 2025</h6>
+
+        <!-- Topic 2: Text Formatting &mdash; sub and sup -->
+        <p style="margin-top:0.8rem;">
+          Water boils at 100&deg;C (373 K). Einstein's
+          E&nbsp;=&nbsp;mc<sup>2</sup> connects mass and energy.
+          Chemical formula of carbon dioxide: CO<sub>2</sub>.
+          <!-- These demonstrate <sup> and <sub> as required. -->
+          <br/><small>&#8679; Examples of &lt;sup&gt; and &lt;sub&gt; formatting tags.</small>
+        </p>
+
+        <!-- Topic 2: Text Formatting &mdash; <mark> -->
+        <p style="margin-top:0.6rem;">
+          My learning priority right now is
+          <mark>full-stack JavaScript (React + Node)</mark> alongside
+          <mark>Java for backend roles</mark>.
+        </p>
+
+      </div>
+    </section>
+
+  </main><!-- end main -->
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <footer> -->
+  <!-- Topic 4: Links &mdash; external links, mailto -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/lakshminarayanankumar7-alt"
+         target="_blank" rel="noopener noreferrer"> GitHub</a>
+      <a href="https://www.linkedin.com/in/lakshmi-narayanan-kumar-5279a4340/"
+         target="_blank" rel="noopener noreferrer"> LinkedIn</a>
+      <a href="https://leetcode.com/u/Lakshmi_Narayana_Kumar/"
+         target="_blank" rel="noopener noreferrer"> LeetCode</a>
+    </div>
+    <!-- Topic 2: Text Formatting &mdash; <small>, <strong> -->
+    <p>
+      <small>&copy; 2025 <strong>Lakshmi Narayana Kumar</strong>
+      &mdash; Built with pure HTML5 &amp; CSS3.</small>
+    </p>
+  </footer>
+
+  <!-- Topic 4: Links &mdash; in-page anchor Back to top -->
+  <!-- Topic 8: Positioning &mdash; position: fixed -->
+  <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</a>
+
+  <!-- Scroll progress + timeline reveal -->
+  <script>
+    (function () {
+      var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var scrollBar = document.getElementById('scrollBar');
+
+      function updateProgress() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docH = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollBar) scrollBar.style.width = (docH > 0 ? (scrollTop / docH) * 100 : 0) + '%';
+      }
+
+      /* Timeline IntersectionObserver */
+      if (!reducedMotion && 'IntersectionObserver' in window) {
+        var items = document.querySelectorAll('.timeline-item');
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry, idx) {
+            if (entry.isIntersecting) {
+              var delay = idx * 120;
+              setTimeout(function () {
+                entry.target.classList.add('visible');
+              }, delay);
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+        items.forEach(function (el) { obs.observe(el); });
+      } else {
+        document.querySelectorAll('.timeline-item').forEach(function (el) {
+          el.classList.add('visible');
+        });
+      }
+
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    })();
+  </script>
+
+</body>
+</html>

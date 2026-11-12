@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#181840"/>
+  <text x="64" y="78" font-family="'Poppins', sans-serif" font-weight="700" font-size="44" fill="#2dd4bf" text-anchor="middle">ex</text>
+  <path d="M28 92h72" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round"/>
+</svg>

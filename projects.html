@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- Topic 1: HTML Structure &mdash; DOCTYPE, lang attribute -->
+<html lang="en">
+<head>
+  <!-- Topic 1: HTML Structure &mdash; meta charset, viewport, title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Lakshmi Narayana Kumar &mdash; LNK Fashion, LEMAN, ScriptArc, FINSMART." />
+  <title>Projects | Lakshmi Narayana Kumar</title>
+  <!-- Topic 6: Colors, Fonts &mdash; shared stylesheet with CSS variables & Google Fonts -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top">
+
+  <!-- Scroll progress bar (cinematic upgrade) -->
+  <div class="scroll-progress-bar" id="scrollBar" aria-hidden="true"></div>
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <header> -->
+  <!-- Topic 9: Navigation Bar &mdash; sticky, hover, active-page highlight -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">LNK.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <main> -->
+  <main>
+
+    <!-- Topic 13: CSS Animations &mdash; fade-in page hero -->
+    <section class="page-hero" aria-label="Page heading">
+      <!-- Topic 2: Headings &mdash; h1 -->
+      <h1>My <span style="color:var(--accent);">Projects</span></h1>
+      <p style="color:var(--text-secondary); max-width:500px; margin:0.5rem auto 0;">
+        Things I have built, am building and am learning from.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         Topic 10: CSS Layouts &mdash; CSS Grid for project cards
+         Topic 7: Box Model &mdash; margin, padding, border, box-sizing
+         Topic 11: Borders & Backgrounds &mdash; card styling, gradients
+         Topic 12: Transformations & Transitions &mdash; card hover lift/scale/rotate
+         Topic 8: Positioning &mdash; absolutely positioned badges
+         Topic 5: Images & Multimedia &mdash; project images with alt text
+         ============================================================ -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="projects-heading">All Projects</h2>
+        <span class="title-bar"></span>
+        <p>Four projects &mdash; one complete, three actively in development.</p>
+      </div>
+
+      <!-- Topic 10: CSS Grid &mdash; project cards -->
+      <div class="projects-grid">
+
+        <!-- ── Project 1: LNK Fashion ─────────────────────────── -->
+        <!-- Topic 4: Links &mdash; id anchor for direct link from Home page -->
+        <article class="project-card" id="lnk-fashion" aria-labelledby="p1-title">
+
+          <!-- Topic 8: Positioning &mdash; position: absolute badge -->
+          <span class="badge">Complete</span>
+
+          <!-- Topic 5: Images & Multimedia &mdash; project image with alt text -->
+          <!-- Topic 11: Backgrounds &mdash; LNK Fashion logo -->
+          <div class="project-img-wrap bg-lnk"
+               role="img"
+               aria-label="LNK Fashion e-commerce project illustration">
+            <img src="images/projects/lnk-fashion.png" alt="LNK Fashion Logo" class="project-logo-img" />
+          </div>
+
+          <div class="project-body">
+            <!-- Topic 2: Headings &mdash; h3 card title -->
+            <h3 id="p1-title">LNK Fashion</h3>
+
+            <!-- Topic 2: Text Formatting &mdash; <strong>, <em> -->
+            <p>
+              A <strong>full-stack e-commerce application</strong> for a fashion
+              brand, featuring product listing, shopping cart, user
+              authentication and order management. Built as a complete
+              <em>MERN stack</em> project.
+            </p>
+
+            <!-- Tech stack tags -->
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+
+            <!-- Topic 2: Text Formatting &mdash; <mark> -->
+            <p style="font-size:0.87rem; color:var(--text-muted); margin-top:0.6rem;">
+              <mark>Full-Stack E-commerce Application</mark>
+            </p>
+
+            <!-- Topic 4: Links &mdash; external GitHub link -->
+            <a href="https://github.com/lakshminarayanankumar7-alt"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary"
+               style="font-size:0.85rem; padding:0.55rem 1.2rem; margin-top:auto;">
+               View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 2: LEMAN ───────────────────────────────── -->
+        <article class="project-card" id="leman" aria-labelledby="p2-title">
+
+          <!-- Topic 8: Absolute badge &mdash; "In Progress" -->
+          <span class="badge badge-progress">In Progress</span>
+
+          <!-- Topic 5: project image with alt text, gradient placeholder -->
+          <div class="project-img-wrap grad-2"
+               role="img"
+               aria-label="LEMAN event management system illustration">
+            <!-- calendar SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"
+                 stroke-linejoin="round" width="52" height="52" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+
+          <div class="project-body">
+            <!-- Topic 2: Headings &mdash; h3 -->
+            <h3 id="p2-title">LEMAN</h3>
+            <p>
+              An event management system designed to help plan, organise and
+              track events from creation through to completion.
+            </p>
+
+            <!-- Topic 4: Links &mdash; external GitHub link -->
+            <a href="https://github.com/lakshminarayanankumar7-alt"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline"
+               style="font-size:0.85rem; padding:0.55rem 1.2rem; margin-top:auto;">
+               View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 3: ScriptArc ───────────────────────────── -->
+        <article class="project-card" id="scriptarc" aria-labelledby="p3-title">
+
+          <!-- Topic 8: Absolute badge &mdash; "In Progress" -->
+          <span class="badge badge-progress">In Progress</span>
+
+          <!-- Topic 5: project image with alt text, ScriptArc logo -->
+          <div class="project-img-wrap bg-scriptarc"
+               role="img"
+               aria-label="ScriptArc project illustration">
+            <img src="images/projects/scriptarc.png" alt="ScriptArc Logo" class="project-logo-img" />
+          </div>
+
+          <div class="project-body">
+            <!-- Topic 2: Headings &mdash; h3 -->
+            <h3 id="p3-title">ScriptArc</h3>
+            <!-- Topic 2: Text Formatting &mdash; <em> -->
+            <p>
+              <em>Details are being added</em> &mdash; this project is currently
+              under active development.
+            </p>
+
+            <!-- Topic 4: Links &mdash; external GitHub link -->
+            <a href="https://github.com/lakshminarayanankumar7-alt"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline"
+               style="font-size:0.85rem; padding:0.55rem 1.2rem; margin-top:auto;">
+               View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 4: FINSMART ───────────────────────────── -->
+        <article class="project-card" id="finsmart" aria-labelledby="p4-title">
+
+          <!-- Topic 8: Absolute badge &mdash; "In Progress" -->
+          <span class="badge badge-progress">In Progress</span>
+
+          <!-- Topic 5: project image with alt text, gradient placeholder -->
+          <div class="project-img-wrap grad-4"
+               role="img"
+               aria-label="FINSMART project illustration">
+            <!-- finance / dollar SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"
+                 stroke-linejoin="round" width="52" height="52" aria-hidden="true">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+
+          <div class="project-body">
+            <!-- Topic 2: Headings &mdash; h3 -->
+            <h3 id="p4-title">FINSMART</h3>
+            <p>
+              <em>Details are being added</em> &mdash; this project is currently
+              under active development.
+            </p>
+
+            <!-- Topic 4: Links &mdash; external GitHub link -->
+            <a href="https://github.com/lakshminarayanankumar7-alt"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline"
+               style="font-size:0.85rem; padding:0.55rem 1.2rem; margin-top:auto;">
+               View on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div><!-- end .projects-grid -->
+    </section>
+
+    <!-- ============================================================
+         Topic 12: Transformations &mdash; hover demo section
+         ============================================================ -->
+    <section class="section" aria-labelledby="transform-heading">
+      <div class="section-title">
+        <!-- Topic 2: Headings &mdash; h2 -->
+        <h2 id="transform-heading">CSS Hover Transformation Demo</h2>
+        <span class="title-bar"></span>
+        <p>
+          Hover the cards to see
+          <code>transform: translateY</code>,
+          <code>scale</code> and <code>rotate</code> in action.
+        </p>
+      </div>
+
+      <!-- Topic 10: Flexbox demo row -->
+      <div style="display:flex; gap:1.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:2rem;">
+
+        <!-- Topic 12: translateY demo -->
+        <div class="card" tabindex="0"
+             style="width:200px; text-align:center; cursor:default;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;"
+             onmouseover="this.style.transform='translateY(-14px)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.4)'"
+             onmouseout="this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:2rem;">⬆</span>
+          <!-- Topic 2: Headings &mdash; h5 -->
+          <h5 style="margin-top:0.5rem;">translateY</h5>
+          <!-- Topic 2: Text Formatting &mdash; <small> -->
+          <small style="color:var(--text-muted);">Card lifts up</small>
+        </div>
+
+        <!-- Topic 12: scale demo -->
+        <div class="card" tabindex="0"
+             style="width:200px; text-align:center; cursor:default;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;"
+             onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.4)'"
+             onmouseout="this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:2rem;"></span>
+          <h5 style="margin-top:0.5rem;">scale</h5>
+          <small style="color:var(--text-muted);">Card enlarges</small>
+        </div>
+
+        <!-- Topic 12: rotate demo -->
+        <div class="card" tabindex="0"
+             style="width:200px; text-align:center; cursor:default;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;"
+             onmouseover="this.style.transform='rotate(-4deg) scale(1.05)'; this.style.boxShadow='0 20px 40px rgba(20,184,166,0.4)'"
+             onmouseout="this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:2rem;"></span>
+          <h5 style="margin-top:0.5rem;">rotate</h5>
+          <small style="color:var(--text-muted);">Card tilts</small>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Topic 2: Text Formatting &mdash; blockquote
+         ============================================================ -->
+    <section class="section" aria-label="Project closing note" style="padding-top:0;">
+      <!-- Topic 2: Text Formatting &mdash; blockquote on projects page -->
+      <blockquote style="max-width:600px; margin:0 auto; text-align:center;">
+        "Every project I build teaches me something I could not have learned
+         from a tutorial alone."
+        <footer>&mdash; Lakshmi Narayana Kumar</footer>
+      </blockquote>
+    </section>
+
+  </main><!-- end main -->
+
+  <!-- Topic 1: HTML Structure &mdash; semantic <footer> -->
+  <!-- Topic 4: Links &mdash; external links with target="_blank" rel="noopener" -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/lakshminarayanankumar7-alt"
+         target="_blank" rel="noopener noreferrer"> GitHub</a>
+      <a href="https://www.linkedin.com/in/lakshmi-narayanan-kumar-5279a4340/"
+         target="_blank" rel="noopener noreferrer"> LinkedIn</a>
+      <a href="https://leetcode.com/u/Lakshmi_Narayana_Kumar/"
+         target="_blank" rel="noopener noreferrer"> LeetCode</a>
+    </div>
+    <!-- Topic 2: Text Formatting &mdash; <small>, <strong> -->
+    <p>
+      <small>&copy; 2025 <strong>Lakshmi Narayana Kumar</strong>
+      &mdash; Built with pure HTML5 &amp; CSS3.</small>
+    </p>
+  </footer>
+
+  <!-- Topic 4: Links &mdash; in-page anchor Back to top -->
+  <!-- Topic 8: Positioning &mdash; position: fixed -->
+  <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</a>
+
+  <!-- Scroll progress bar script -->
+  <script>
+    (function () {
+      var scrollBar = document.getElementById('scrollBar');
+      function updateProgress() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docH = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollBar) scrollBar.style.width = (docH > 0 ? (scrollTop / docH) * 100 : 0) + '%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    })();
+  </script>
+
+</body>
+</html>
